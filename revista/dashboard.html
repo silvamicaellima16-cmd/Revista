@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Acadêmico - João Silva | ADS CCI</title>
+    <link rel="stylesheet" href="styles.css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="João Silva" class="profile-img">
+                    <div class="user-info">
+                        <h3>João Silva</h3>
+                        <p class="user-role">ADS - 3º Período</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a href="#overview" class="nav-link" data-section="overview">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Visão Geral</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#notas" class="nav-link" data-section="notas">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Notas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#presenca" class="nav-link" data-section="presenca">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Presença</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#atividades" class="nav-link" data-section="atividades">
+                            <i class="fas fa-tasks"></i>
+                            <span>Atividades</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#financeiro" class="nav-link" data-section="financeiro">
+                            <i class="fas fa-university"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="quick-actions">
+                    <button class="action-btn" title="Horários">
+                        <i class="fas fa-clock"></i>
+                    </button>
+                    <button class="action-btn" title="Biblioteca">
+                        <i class="fas fa-book"></i>
+                    </button>
+                    <button class="action-btn" title="Ajuda">
+                        <i class="fas fa-question-circle"></i>
+                    </button>
+                </div>
+                <div class="logout">
+                    <a href="#" class="logout-link">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sair
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <h1 id="page-title">Visão Geral</h1>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Pesquisar...">
+                    </div>
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </button>
+                    </div>
+                    <div class="user-menu">
+                        <button class="user-btn">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="User">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Overview Section -->
+                <section id="overview" class="dashboard-section active">
+                    <div class="grid-container">
+                        <!-- Stats Cards -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number" data-target="8.7">0</h3>
+                                    <p class="stat-label">CR Atual</p>
+                                    <div class="stat-trend positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        +0.2 este semestre
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number" data-target="56">0</h3>
+                                    <p class="stat-label">Créditos Concluídos</p>
+                                    <div class="stat-trend positive">
+                                        <i class="fas fa-arrow-up"></i>
+                                        78% do curso
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number" data-target="92">0</h3>
+                                    <p class="stat-label">Taxa de Presença</p>
+                                    <div class="stat-trend warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        Atenção em 2 disciplinas
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3 class="stat-number" data-target="3">0</h3>
+                                    <p class="stat-label">Disciplinas em Andamento</p>
+                                    <div class="stat-trend neutral">
+                                        <i class="fas fa-minus"></i>
+                                        Período atual
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Charts -->
+                        <div class="charts-grid">
+                            <!-- Performance Chart -->
+                            <div class="chart-card">
+                                <div class="chart-header">
+                                    <h3>Evolução do CR</h3>
+                                    <span class="chart-period">Últimos 6 semestres</span>
+                                </div>
+                                <div class="chart-container">
+                                    <div class="line-chart">
+                                        <div class="chart-line line-1"></div>
+                                        <div class="chart-line line-2"></div>
+                                        <div class="chart-dots">
+                                            <div class="dot" style="--x: 10%; --y: 80%"></div>
+                                            <div class="dot" style="--x: 25%; --y: 70%"></div>
+                                            <div class="dot" style="--x: 40%; --y: 60%"></div>
+                                            <div class="dot active" style="--x: 60%; --y: 40%"></div>
+                                            <div class="dot" style="--x: 80%; --y: 30%"></div>
+                                        </div>
+                                        <div class="chart-grid"></div>
+                                        <div class="chart-axis">
+                                            <span class="axis-label">1º Semestre</span>
+                                            <span class="axis-label">3º Semestre</span>
+                                            <span class="axis-label">5º Semestre</span>
+                                            <span class="axis-label">Atual</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Grade Distribution -->
+                            <div class="chart-card">
+                                <div class="chart-header">
+                                    <h3>Distribuição de Notas</h3>
+                                    <span class="chart-period">Período atual</span>
+                                </div>
+                                <div class="chart-container">
+                                    <div class="bar-chart">
+                                        <div class="bar-group">
+                                            <div class="bar-label">A (9-10)</div>
+                                            <div class="bar" style="--height: 85%; --color: #10B981"></div>
+                                        </div>
+                                        <div class="bar-group">
+                                            <div class="bar-label">B (8-8.9)</div>
+                                            <div class="bar" style="--height: 65%; --color: #3B82F6"></div>
+                                        </div>
+                                        <div class="bar-group">
+                                            <div class="bar-label">C (7-7.9)</div>
+                                            <div class="bar" style="--height: 40%; --color: #F59E0B"></div>
+                                        </div>
+                                        <div class="bar-group">
+                                            <div class="bar-label">D (<7)</div>
+                                            <div class="bar" style="--height: 15%; --color: #EF4444"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activities -->
+                        <div class="activities-card">
+                            <div class="card-header">
+                                <h3>Atividades Recentes</h3>
+                                <a href="#" class="view-all">Ver todas <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="activities-list">
+                                <div class="activity-item">
+                                    <div class="activity-icon success">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Prova de Algoritmos</h4>
+                                        <p>Nota registrada: 9.2/10</p>
+                                        <span class="activity-time">2 horas atrás</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon warning">
+                                        <i class="fas fa-exclamation"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Trabalho BD Relacional</h4>
+                                        <p>Prazo: 25/09/2025 - Entregar em 3 dias</p>
+                                        <span class="activity-time">1 dia atrás</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon info">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Aula de Engenharia de Software</h4>
+                                        <p>Presença confirmada - 100% no mês</p>
+                                        <span class="activity-time">Hoje 08:30</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon danger">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h4>Recuperação Matemática Discreta</h4>
+                                        <p>Presença abaixo de 75% - Agendar reunião</p>
+                                        <span class="activity-time">Ontem</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Next Classes -->
+                        <div class="schedule-card">
+                            <div class="card-header">
+                                <h3>Próximas Aulas</h3>
+                                <a href="#" class="view-all">Ver calendário <i class="fas fa-calendar-alt"></i></a>
+                            </div>
+                            <div class="schedule-list">
+                                <div class="schedule-item">
+                                    <div class="schedule-time">08:30 - 10:00</div>
+                                    <div class="schedule-info">
+                                        <h4>Engenharia de Software III</h4>
+                                        <p>Lab. 204 - Prof. Carlos Menezes</p>
+                                        <div class="schedule-status present">
+                                            <i class="fas fa-check"></i> Presente
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">10:30 - 12:00</div>
+                                    <div class="schedule-info">
+                                        <h4>Banco de Dados Relacional</h4>
+                                        <p>Auditório B - Prof. Ana Costa</p>
+                                        <div class="schedule-status future">
+                                            <i class="fas fa-clock"></i> Em breve
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-item">
+                                    <div class="schedule-time">14:00 - 15:30</div>
+                                    <div class="schedule-info">
+                                        <h4>Algoritmos e Estruturas</h4>
+                                        <p>Lab. 101 - Prof. Roberto Lima</p>
+                                        <div class="schedule-status future">
+                                            <i class="fas fa-clock"></i> Em breve
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Notas Section -->
+                <section id="notas" class="dashboard-section">
+                    <div class="grid-container">
+                        <div class="grades-header">
+                            <h2>Notas do Período Atual</h2>
+                            <div class="grades-filters">
+                                <select class="filter-select">
+                                    <option>Período 2025.2</option>
+                                    <option>Período 2025.1</option>
+                                    <option>Período 2024.2</option>
+                                </select>
+                                <button class="filter-btn">
+                                    <i class="fas fa-filter"></i> Filtros
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="grades-table-container">
+                            <table class="grades-table">
+                                <thead>
+                                    <tr>
+                                        <th>Disciplina</th>
+                                        <th>Professor</th>
+                                        <th>Nota 1</th>
+                                        <th>Nota 2</th>
+                                        <th>Prova</th>
+                                        <th>Média</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Engenharia de Software III</td>
+                                        <td>Carlos Menezes</td>
+                                        <td>9.5</td>
+                                        <td>8.8</td>
+                                        <td>9.2</td>
+                                        <td>9.2</td>
+                                        <td class="status approved">Aprovado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Banco de Dados Relacional</td>
+                                        <td>Ana Costa</td>
+                                        <td>8.7</td>
+                                        <td>9.0</td>
+                                        <td>-</td>
+                                        <td>8.9</td>
+                                        <td class="status ongoing">Em andamento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Algoritmos e Estruturas</td>
+                                        <td>Roberto Lima</td>
+                                        <td>7.8</td>
+                                        <td>8.2</td>
+                                        <td>-</td>
+                                        <td>8.0</td>
+                                        <td class="status ongoing">Em andamento</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática Discreta</td>
+                                        <td>Maria Oliveira</td>
+                                        <td>6.5</td>
+                                        <td>7.0</td>
+                                        <td>5.8</td>
+                                        <td>6.4</td>
+                                        <td class="status recovery">Recuperação</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="grades-summary">
+                            <div class="summary-item">
+                                <h4>Média do Período</h4>
+                                <div class="summary-value">8.1</div>
+                                <div class="summary-trend positive">+0.3 vs período anterior</div>
+                            </div>
+                            <div class="summary-item">
+                                <h4>Maior Nota</h4>
+                                <div class="summary-value">9.5</div>
+                                <div class="summary-trend neutral">Engenharia de Software</div>
+                            </div>
+                            <div class="summary-item">
+                                <h4>Menor Nota</h4>
+                                <div class="summary-value">5.8</div>
+                                <div class="summary-trend danger">Matemática Discreta</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Presença Section -->
+                <section id="presenca" class="dashboard-section">
+                    <div class="grid-container">
+                        <div class="presence-header">
+                            <h2>Controle de Presença</h2>
+                            <div class="presence-filters">
+                                <select class="filter-select">
+                                    <option>Mês de Setembro</option>
+                                    <option>Mês de Agosto</option>
+                                    <option>Mês de Julho</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="presence-grid">
+                            <div class="presence-card">
+                                <div class="presence-header">
+                                    <h3>Engenharia de Software III</h3>
+                                    <div class="presence-summary">
+                                        <span class="presence-total">24 aulas</span>
+                                        <span class="presence-current">22/24</span>
+                                    </div>
+                                </div>
+                                <div class="presence-calendar">
+                                    <div class="calendar-week">
+                                        <div class="calendar-day present">S <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">T <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">Q <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day absent">Q <i class="fas fa-times"></i></div>
+                                        <div class="calendar-day present">S <i class="fas fa-check"></i></div>
+                                    </div>
+                                    <div class="presence-footer">
+                                        <span class="presence-rate">91.7%</span>
+                                        <span class="presence-status good">Status: Regular</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="presence-card">
+                                <div class="presence-header">
+                                    <h3>Banco de Dados Relacional</h3>
+                                    <div class="presence-summary">
+                                        <span class="presence-total">24 aulas</span>
+                                        <span class="presence-current">20/24</span>
+                                    </div>
+                                </div>
+                                <div class="presence-calendar">
+                                    <div class="calendar-week">
+                                        <div class="calendar-day present">S <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">T <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">Q <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">Q <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day absent">S <i class="fas fa-times"></i></div>
+                                    </div>
+                                    <div class="presence-footer">
+                                        <span class="presence-rate">83.3%</span>
+                                        <span class="presence-status warning">Status: Atenção</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="presence-card">
+                                <div class="presence-header">
+                                    <h3>Algoritmos e Estruturas</h3>
+                                    <div class="presence-summary">
+                                        <span class="presence-total">24 aulas</span>
+                                        <span class="presence-current">23/24</span>
+                                    </div>
+                                </div>
+                                <div class="presence-calendar">
+                                    <div class="calendar-week">
+                                        <div class="calendar-day present">S <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">T <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">Q <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">Q <i class="fas fa-check"></i></div>
+                                        <div class="calendar-day present">S <i class="fas fa-check"></i></div>
+                                    </div>
+                                    <div class="presence-footer">
+                                        <span class="presence-rate">95.8%</span>
+                                        <span class="presence-status good">Status: Excelente</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="presence-overview">
+                                <h3>Resumo Mensal</h3>
+                                <div class="overview-chart">
+                                    <div class="overview-bar">
+                                        <div class="bar-segment good" style="width: 45%"></div>
+                                        <div class="bar-segment warning" style="width: 35%"></div>
+                                        <div class="bar-segment danger" style="width: 20%"></div>
+                                    </div>
+                                    <div class="overview-legend">
+                                        <span><i class="status-icon good"></i> Presente (45 aulas)</span>
+                                        <span><i class="status-icon warning"></i> Faltas justificadas (35 aulas)</span>
+                                        <span><i class="status-icon danger"></i> Faltas não justificadas (20 aulas)</span>
+                                    </div>
+                                </div>
+                                <div class="overview-alerts">
+                                    <div class="alert-item warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                        <strong>Atenção:</strong> Presença em Banco de Dados abaixo de 85%
+                                    </div>
+                                    <div class="alert-item danger">
+                                        <i class="fas fa-times-circle"></i>
+                                        <strong>Urgente:</strong> Matemática Discreta - risco de reprovação por falta
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Atividades Section -->
+                <section id="atividades" class="dashboard-section">
+                    <div class="grid-container">
+                        <div class="activities-header">
+                            <h2>Minhas Atividades</h2>
+                            <div class="activities-filters">
+                                <select class="filter-select">
+                                    <option>Todas as disciplinas</option>
+                                    <option>Engenharia de Software</option>
+                                    <option>Banco de Dados</option>
+                                    <option>Algoritmos</option>
+                                </select>
+                                <button class="add-activity">
+                                    <i class="fas fa-plus"></i> Nova Atividade
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="activities-grid">
+                            <div class="activity-card urgent">
+                                <div class="activity-header">
+                                    <h3>Trabalho Final - Banco de Dados</h3>
+                                    <div class="activity-priority high">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        Alta
+                                    </div>
+                                </div>
+                                <div class="activity-details">
+                                    <p class="activity-description">Projeto de sistema de gerenciamento acadêmico com banco relacional</p>
+                                    <div class="activity-meta">
+                                        <span class="meta-item"><i class="fas fa-calendar"></i> 25/09/2025</span>
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 3 dias restantes</span>
+                                        <span class="meta-item"><i class="fas fa-tasks"></i> 40% concluído</span>
+                                    </div>
+                                    <div class="activity-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-actions">
+                                    <button class="action-btn primary">Continuar</button>
+                                    <button class="action-btn secondary">Detalhes</button>
+                                </div>
+                            </div>
+
+                            <div class="activity-card normal">
+                                <div class="activity-header">
+                                    <h3>Slides - Apresentação Algoritmos</h3>
+                                    <div class="activity-priority medium">
+                                        <i class="fas fa-circle"></i>
+                                        Média
+                                    </div>
+                                </div>
+                                <div class="activity-details">
+                                    <p class="activity-description">Preparar apresentação sobre algoritmos de ordenação para aula de sexta</p>
+                                    <div class="activity-meta">
+                                        <span class="meta-item"><i class="fas fa-calendar"></i> 27/09/2025</span>
+                                        <span class="meta-item"><i class="fas fa-clock"></i> 5 dias restantes</span>
+                                        <span class="meta-item"><i class="fas fa-tasks"></i> 20% concluído</span>
+                                    </div>
+                                    <div class="activity-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 20%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-actions">
+                                    <button class="action-btn primary">Iniciar</button>
+                                    <button class="action-btn secondary">Editar</button>
+                                </div>
+                            </div>
+
+                            <div class="activity-card completed">
+                                <div class="activity-header">
+                                    <h3>Resumo - História da Computação</h3>
+                                    <div class="activity-priority low">
+                                        <i class="fas fa-check-circle"></i>
+                                        Concluída
+                                    </div>
+                                </div>
+                                <div class="activity-details">
+                                    <p class="activity-description">Resumo sobre evolução dos computadores para disciplina eletiva</p>
+                                    <div class="activity-meta">
+                                        <span class="meta-item"><i class="fas fa-calendar-check"></i> 20/09/2025</span>
+                                        <span class="meta-item"><i class="fas fa-clock"></i> Entregue</span>
+                                        <span class="meta-item"><i class="fas fa-star"></i> Avaliação: 9.0</span>
+                                    </div>
+                                    <div class="activity-progress">
+                                        <div class="progress-bar completed">
+                                            <div class="progress-fill" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="activity-actions">
+                                    <button class="action-btn secondary">Ver feedback</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activities-summary">
+                            <div class="summary-card">
+                                <h4>Resumo das Atividades</h4>
+                                <div class="summary-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">12</div>
+                                        <div class="stat-label">Total</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">3</div>
+                                        <div class="stat-label">Urgentes</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">5</div>
+                                        <div class="stat-label">Em andamento</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">4</div>
+                                        <div class="stat-label">Concluídas</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="deadline-widget">
+                                <h4>Próximos Prazos</h4>
+                                <div class="deadline-list">
+                                    <div class="deadline-item critical">
+                                        <div class="deadline-info">
+                                            <h5>Trabalho BD</h5>
+                                            <p>Projeto final do semestre</p>
+                                        </div>
+                                        <div class="deadline-time">3 dias</div>
+                                    </div>
+                                    <div class="deadline-item urgent">
+                                        <div class="deadline-info">
+                                            <h5>Apresentação Algoritmos</h5>
+                                            <p>Slides para aula prática</p>
+                                        </div>
+                                        <div class="deadline-time">5 dias</div>
+                                    </div>
+                                    <div class="deadline-item normal">
+                                        <div class="deadline-info">
+                                            <h5>Relatório Estágio</h5>
+                                            <p>Relatório mensal</p>
+                                        </div>
+                                        <div class="deadline-time">12 dias</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Financeiro Section -->
+                <section id="financeiro" class="dashboard-section">
+                    <div class="grid-container">
+                        <div class="finance-header">
+                            <h2>Situação Financeira</h2>
+                            <div class="finance-period">
+                                <span>Período 2025.2</span>
+                                <button class="period-btn"><i class="fas fa-calendar"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="finance-grid">
+                            <div class="finance-card balance">
+                                <div class="balance-info">
+                                    <h3>Saldo Atual</h3>
+                                    <div class="balance-amount">R$ 1.250,00</div>
+                                    <div class="balance-status paid">✓ Mensalidade paga</div>
+                                </div>
+                                <div class="balance-progress">
+                                    <div class="progress-circle">
+                                        <svg class="progress-ring">
+                                            <circle class="progress-ring-circle" stroke-width="8" r="60" cx="70" cy="70"></circle>
+                                            <circle class="progress-ring-progress" stroke-width="8" r="60" cx="70" cy="70" stroke-dasharray="377" stroke-dashoffset="113"></circle>
+                                        </svg>
+                                        <div class="progress-text">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="finance-card payments">
+                                <h3>Próximos Pagamentos</h3>
+                                <div class="payment-list">
+                                    <div class="payment-item due">
+                                        <div class="payment-info">
+                                            <h4>Mensalidade Setembro</h4>
+                                            <p class="payment-value">R$ 1.250,00</p>
+                                            <p class="payment-date">Vence em 10/09</p>
+                                        </div>
+                                        <div class="payment-status overdue">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            Atrasado
+                                        </div>
+                                    </div>
+                                    <div class="payment-item upcoming">
+                                        <div class="payment-info">
+                                            <h4>Taxa de Laboratório</h4>
+                                            <p class="payment-value">R$ 180,00</p>
+                                            <p class="payment-date">Vence em 25/09</p>
+                                        </div>
+                                        <div class="payment-status pending">
+                                            <i class="fas fa-clock"></i>
+                                            Pendente
+                                        </div>
+                                    </div>
+                                    <div class="payment-item paid">
+                                        <div class="payment-info">
+                                            <h4>Mensalidade Agosto</h4>
+                                            <p class="payment-value">R$ 1.250,00</p>
+                                            <p class="payment-date">Pago em 05/08</p>
+                                        </div>
+                                        <div class="payment-status completed">
+                                            <i class="fas fa-check"></i>
+                                            Pago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="finance-card history">
+                                <h3>Histórico de Pagamentos</h3>
+                                <div class="history-chart">
+                                    <div class="month-bar">
+                                        <div class="month-label">Jan</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Fev</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Mar</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Abr</div>
+                                        <div class="month-value paid" style="height: 90%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Mai</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Jun</div>
+                                        <div class="month-value partial" style="height: 70%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Jul</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Ago</div>
+                                        <div class="month-value paid" style="height: 100%"></div>
+                                    </div>
+                                    <div class="month-bar">
+                                        <div class="month-label">Set</div>
+                                        <div class="month-value overdue" style="height: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="finance-actions">
+                            <div class="action-card boleto">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <h3>Gerar Boleto</h3>
+                                <p>Pague sua mensalidade com segurança</p>
+                                <button class="btn-primary">Gerar 2º Via</button>
+                            </div>
+                            <div class="action-card scholarship">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>Bolsas e Financiamento</h3>
+                                <p>Verifique sua elegibilidade para bolsas</p>
+                                <button class="btn-secondary">Solicitar Bolsa</button>
+                            </div>
+                            <div class="action-card support">
+                                <i class="fas fa-headset"></i>
+                                <h3>Suporte Financeiro</h3>
+                                <p>Precisa de ajuda com pagamentos?</p>
+                                <button class="btn-secondary">Falar com Financeiro</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

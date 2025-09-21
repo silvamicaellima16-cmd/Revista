@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - João Silva | Desenvolvedor ADS</title>
+    <link rel="stylesheet" href="styles.css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="#home" class="logo">
+                <i class="fas fa-code"></i>
+                <span>João Silva</span>
+            </a>
+        </div>
+        
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#projetos" class="nav-link" data-section="projetos">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projetos</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#sobre" class="nav-link" data-section="sobre">
+                    <i class="fas fa-user"></i>
+                    <span>Sobre</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contato" class="nav-link" data-section="contato">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="navbar-actions">
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle" title="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-profile">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="João Silva" class="profile-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">João Silva</h1>
+                    <h2 class="hero-subtitle">Desenvolvedor Full Stack</h2>
+                    <p class="hero-description">Estudante de Análise e Desenvolvimento de Sistemas na CCI. Apaixonado por criar soluções digitais que fazem a diferença.</p>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <a href="#projetos" class="btn-primary">Ver Meus Projetos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="E-commerce">
+                        <div class="projeto-overlay">
+                            <a href="#" class="projeto-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-content">
+                        <h3 class="projeto-titulo">E-commerce React</h3>
+                        <p class="projeto-descricao">Plataforma de vendas online completa com carrinho, pagamento e painel administrativo.</p>
+                        <div class="projeto-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="#" class="link-demo">Demo</a>
+                            <a href="#" class="link-code">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" alt="App Mobile">
+                        <div class="projeto-overlay">
+                            <a href="#" class="projeto-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-content">
+                        <h3 class="projeto-titulo">App Delivery</h3>
+                        <p class="projeto-descricao">Aplicativo mobile para delivery local com integração de mapas e notificações push.</p>
+                        <div class="projeto-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Google Maps</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="#" class="link-demo">Demo</a>
+                            <a href="#" class="link-code">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Dashboard">
+                        <div class="projeto-overlay">
+                            <a href="#" class="projeto-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projeto-content">
+                        <h3 class="projeto-titulo">Dashboard Admin</h3>
+                        <p class="projeto-descricao">Sistema de gerenciamento com gráficos interativos e relatórios em tempo real.</p>
+                        <div class="projeto-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="projeto-links">
+                            <a href="#" class="link-demo">Demo</a>
+                            <a href="#" class="link-code">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h3>Minha Jornada</h3>
+                    <p>Sou estudante do 3º período de Análise e Desenvolvimento de Sistemas na CCI. Apaixonado por tecnologia desde os 14 anos, quando criei meu primeiro site em HTML. Hoje, foco em desenvolvimento full stack e inteligência artificial.</p>
+                    
+                    <h3>Habilidades</h3>
+                    <div class="habilidades-grid">
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 90%"></div>
+                            </div>
+                            <span class="habilidade-label">JavaScript</span>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 85%"></div>
+                            </div>
+                            <span class="habilidade-label">React</span>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 80%"></div>
+                            </div>
+                            <span class="habilidade-label">Node.js</span>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 75%"></div>
+                            </div>
+                            <span class="habilidade-label">Python</span>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 70%"></div>
+                            </div>
+                            <span class="habilidade-label">Docker</span>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-bar">
+                                <div class="habilidade-progress" style="width: 65%"></div>
+                            </div>
+                            <span class="habilidade-label">AWS</span>
+                        </div>
+                    </div>
+                    
+                    <h3>Experiência</h3>
+                    <div class="experiencia-list">
+                        <div class="experiencia-item">
+                            <h4>Estagiário Dev - TechSolutions</h4>
+                            <span class="experiencia-periodo">Jan 2024 - Presente</span>
+                            <p>Desenvolvimento de APIs REST e manutenção de sistemas legados.</p>
+                        </div>
+                        <div class="experiencia-item">
+                            <h4>Freelancer - Projetos Web</h4>
+                            <span class="experiencia-periodo">Jun 2023 - Dez 2023</span>
+                            <p>Criação de sites para pequenos negócios locais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-contact">
+                    <h3>Entre em Contato</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>joao.silva@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(61) 9999-1234</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Samambaia, DF</span>
+                    </div>
+                    <a href="#contato" class="btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <form class="contato-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 João Silva. Desenvolvido com ❤️ em Samambaia, DF.</p>
+        </div>
+    </footer>
+</body>
+</html>

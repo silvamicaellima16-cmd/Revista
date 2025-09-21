@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Acadêmica ADS 2025 | CCI</title>
+    <link rel="stylesheet" href="styles.css/evento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Semana ADS 2025</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="#programa" class="nav-link">Programação</a></li>
+                    <li><a href="#palestrantes" class="nav-link">Palestrantes</a></li>
+                    <li><a href="#contato" class="nav-link">Inscrição</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Semana Acadêmica<br>de Análise e<br>Desenvolvimento de Sistemas</h1>
+            <p class="hero-subtitle">21-25 de Outubro • CCI Campus Central</p>
+            <div class="hero-buttons">
+                <a href="#contato" class="btn-primary">Inscreva-se Agora</a>
+                <a href="#programa" class="btn-secondary">Ver Programação</a>
+            </div>
+            <div class="hero-countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">15</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">12</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">30</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">45</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=800&fit=crop" alt="Evento ADS">
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre o Evento</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>A Semana Acadêmica ADS 2025 é o maior evento de tecnologia do Centro de Ciências da Computação e Informação. Reúne alunos, professores e profissionais para discutir as tendências mais atuais em desenvolvimento de software, inteligência artificial e inovação tecnológica.</p>
+                    <div class="sobre-features">
+                        <div class="feature">
+                            <div class="feature-icon">🎤</div>
+                            <h3>15+ Palestrantes</h3>
+                            <p>Especialistas renomados do mercado</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">📚</div>
+                            <h3>20+ Minicursos</h3>
+                            <p>Prática com tecnologias atuais</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🏆</div>
+                            <h3>Hackathon</h3>
+                            <p>Premiação de R$ 10.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=600&fit=crop" alt="Auditório">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programação -->
+    <section id="programa" class="programa">
+        <div class="container">
+            <h2 class="section-title">Programação Completa</h2>
+            <div class="programa-tabs">
+                <button class="tab-btn active" data-tab="dia1">21/10 - Segunda</button>
+                <button class="tab-btn" data-tab="dia2">22/10 - Terça</button>
+                <button class="tab-btn" data-tab="dia3">23/10 - Quarta</button>
+                <button class="tab-btn" data-tab="dia4">24/10 - Quinta</button>
+                <button class="tab-btn" data-tab="dia5">25/10 - Sexta</button>
+            </div>
+
+            <div class="programa-content">
+                <!-- Dia 1 -->
+                <div class="tab-content active" id="dia1">
+                    <div class="programa-grid">
+                        <div class="programa-item">
+                            <div class="horario">08:00 - 09:00</div>
+                            <div class="atividade">
+                                <h3 class="atividade-titulo">Abertura Oficial</h3>
+                                <p class="atividade-descricao">Cerimônia de abertura com autoridades da CCI</p>
+                                <span class="atividade-local">Auditório Central</span>
+                            </div>
+                        </div>
+                        <div class="programa-item">
+                            <div class="horario">09:00 - 11:00</div>
+                            <div class="atividade">
+                                <h3 class="atividade-titulo">Palestra: "IA Generativa no Desenvolvimento"</h3>
+                                <p class="atividade-descricao">Dr. João Silva - CTO da TechNova</p>
+                                <span class="atividade-local">Auditório Principal</span>
+                            </div>
+                        </div>
+                        <div class="programa-item">
+                            <div class="horario">11:30 - 13:00</div>
+                            <div class="atividade">
+                                <h3 class="atividade-titulo">Minicurso: React Avançado</h3>
+                                <p class="atividade-descricao">Hooks, Context API e Performance</p>
+                                <span class="atividade-local">Lab. 101</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dia 2 -->
+                <div class="tab-content" id="dia2">
+                    <div class="programa-grid">
+                        <div class="programa-item">
+                            <div class="horario">08:30 - 10:00</div>
+                            <div class="atividade">
+                                <h3 class="atividade-titulo">Workshop: Docker e Kubernetes</h3>
+                                <p class="atividade-descricao">Containerização prática para devs</p>
+                                <span class="atividade-local">Lab. 102</span>
+                            </div>
+                        </div>
+                        <div class="programa-item">
+                            <div class="horario">10:30 - 12:00</div>
+                            <div class="atividade">
+                                <h3 class="atividade-titulo">Painel: Carreira em TI</h3>
+                                <p class="atividade-descricao">Profissionais compartilham experiências</p>
+                                <span class="atividade-local">Auditório Secundário</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palestrantes -->
+    <section id="palestrantes" class="palestrantes">
+        <div class="container">
+            <h2 class="section-title">Palestrantes Confirmados</h2>
+            <div class="palestrantes-grid">
+                <div class="palestrante-card">
+                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Dr. João Silva" class="palestrante-foto">
+                    <div class="palestrante-info">
+                        <h3>Dr. João Silva</h3>
+                        <p class="palestrante-cargo">CTO - TechNova Solutions</p>
+                        <p class="palestrante-bio">Especialista em IA com 15 anos de experiência. Doutor pela USP e autor de 3 livros sobre machine learning.</p>
+                        <div class="palestrante-social">
+                            <a href="#" class="social-link">🔗 LinkedIn</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="palestrante-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Ana Costa" class="palestrante-foto">
+                    <div class="palestrante-info">
+                        <h3>Ana Costa</h3>
+                        <p class="palestrante-cargo">DevOps Lead - SoftTech</p>
+                        <p class="palestrante-bio">Líder técnica com foco em automação e cloud. Palestrante em 20+ eventos nacionais.</p>
+                        <div class="palestrante-social">
+                            <a href="#" class="social-link">💻 GitHub</a>
+                            <a href="#" class="social-link">📧 Contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="palestrante-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Carlos Menezes" class="palestrante-foto">
+                    <div class="palestrante-info">
+                        <h3>Prof. Carlos Menezes</h3>
+                        <p class="palestrante-cargo">Coordenador ADS - CCI</p>
+                        <p class="palestrante-bio">Professor e pesquisador com 20 anos de experiência em desenvolvimento de software.</p>
+                        <div class="palestrante-social">
+                            <a href="#" class="social-link">📧 Email</a>
+                            <a href="#" class="social-link">📚 Lattes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section id="contato" class="inscricao">
+        <div class="container">
+            <h2 class="section-title">Inscreva-se Agora</h2>
+            <div class="inscricao-content">
+                <div class="inscricao-info">
+                    <h3>Informações da Inscrição</h3>
+                    <div class="info-item">
+                        <div class="info-icon">💰</div>
+                        <div class="info-text">
+                            <h4>Alunos CCI</h4>
+                            <p>Gratuito</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">💳</div>
+                        <div class="info-text">
+                            <h4>Profissionais</h4>
+                            <p>R$ 150,00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📅</div>
+                        <div class="info-text">
+                            <h4>Prazo</h4>
+                            <p>Até 15/10/2025</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="inscricao-form" id="inscricaoForm">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="curso">Curso *</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Selecione seu curso</option>
+                            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="si">Sistemas de Informação</option>
+                            <option value="engenharia">Engenharia de Computação</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Inscrição</label>
+                        <select id="tipo" name="tipo">
+                            <option value="aluno">Aluno CCI - Gratuito</option>
+                            <option value="profissional">Profissional - R$ 150</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Confirmar Inscrição</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Semana Acadêmica ADS - CCI. Todos os direitos reservados.</p>
+            <p>contato@semanaads.cci.edu.br | (61) 9999-1234</p>
+        </div>
+    </footer>
+</body>
+</html>
