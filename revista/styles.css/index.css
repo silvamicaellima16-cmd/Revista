@@ -1035,14 +1035,6 @@ body {
     position: relative;
 }
 
-.pergunta::before {
-    content: '❓';
-    font-size: 2rem;
-    position: absolute;
-    left: 1rem;
-    top: 1.5rem;
-}
-
 .resposta {
     background: var(--branco);
     border: 2px solid var(--azul-tech);
@@ -1116,3 +1108,4 @@ body {
         padding: 1.25rem;
     }
 }
+
